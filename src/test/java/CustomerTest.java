@@ -12,18 +12,15 @@ public class CustomerTest {
     
     public CustomerTest()
     {
-         movies.add(new Movie("Godfather",MovieType.regular, 1,1));
-         movies.add(new Movie("Lord of the Rings",MovieType.kids, 1,1));
+         movies.add(new Movie("Godfather",MovieType.regular, 1));
+         movies.add(new Movie("Lord of the Rings",MovieType.kids, 1));
     }
     
     @Test
     public void addMovieForCustomer()
     {
         var customer = new Customer();
-        
-        var movie = movies.get(0);
-        
-        customer.addMovie(movie, 1);
+        customer.addMovie(movies.get(0), 4);
         
         customer.printInvoice();
     }

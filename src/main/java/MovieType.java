@@ -4,3 +4,4 @@ public enum MovieType
     newRelease,
     kids
 }
+

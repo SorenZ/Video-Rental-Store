@@ -2,18 +2,16 @@
 
 public class Movie
 {
-    public Movie(String name, MovieType movieType, int bonus, double price)
+    public Movie(String name, MovieType movieType, int bonus)
     {
         this.name = name;
         this.movieType = movieType;
         this.bonus = bonus;
-        this.price = price;
     }
 
     private String name;
     private MovieType movieType;
     private int bonus;
-    private double price;
 
     public String getName() {
         return name;
@@ -21,6 +19,10 @@ public class Movie
 
     public int getBonus() {
         return bonus;
+    }
+
+    public MovieType getMovieType() {
+        return movieType;
     }
 }
 
